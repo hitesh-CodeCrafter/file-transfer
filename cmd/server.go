@@ -55,7 +55,6 @@ func main() {
 			continue
 		}
 
-		//path
-		go handleConnection(conn, "/home/altair/go/src/file-transfer/output.mp4") // Replace with your desired save path
+		go handleConnection(conn, "/home/altair/go/src/file-transfer/output.mp4")
 	}
 }

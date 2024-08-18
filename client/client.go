@@ -8,14 +8,13 @@ import (
 )
 
 func main() {
-	conn, err := net.Dial("tcp", "localhost:8080") // Replace 'server_ip' with the actual server IP
+	conn, err := net.Dial("tcp", "localhost:8080")
 	if err != nil {
 		fmt.Println("Error connecting to server:", err)
 		return
 	}
 	defer conn.Close()
 
-	// Open the file to be sent
 	file, err := os.Open("/media/altair/Fade/animes/black clover/Black Clover (TV) (Sub) Episode 077 - Watch Black Clover (TV) (Sub) Episod.mp4") // Replace with the file you want to send
 	if err != nil {
 		fmt.Println("Error opening file:", err)
